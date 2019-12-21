@@ -19,4 +19,28 @@
         android:layout_height="wrap_content"
         android:text="revealbanner"/>
 
+    <Button
+        android:id="@+id/main_smartrefresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="smartrefresh"/>
+
+    <Button
+        android:id="@+id/main_swiperefresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="swiperefresh"/>
+
+    <Button
+        android:id="@+id/main_mpandroidchart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="mpandroidchart"/>
+
+    <Button
+        android:id="@+id/main_echart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="echart"/>
+
 </LinearLayout>
