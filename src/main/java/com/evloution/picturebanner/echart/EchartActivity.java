@@ -8,9 +8,6 @@ import android.webkit.WebViewClient;
 
 import com.evloution.picturebanner.R;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
@@ -30,12 +27,15 @@ public class EchartActivity extends AppCompatActivity {
             public void onPageFinished(WebView view, String url) {
                 super.onPageFinished(view, url);
                 //最好在h5页面加载完毕后再加载数据，防止html的标签还未加载完成，不能正常显示
-                //refreshLineChart();
+                // refreshLineChart();
+                // refreshPieChart();
+                //lineChart.refreshEchartsWithOption();
                 refreshPieChart();
             }
         });
     }
 
+    // 折线图
     private void refreshLineChart(){
         Object[] x = new Object[]{
                 "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"
@@ -46,16 +46,11 @@ public class EchartActivity extends AppCompatActivity {
         lineChart.refreshEchartsWithOption(EchartOptionUtil.getLineChartOptions(x, y));
     }
 
+    // 饼图
     private void refreshPieChart(){
-        List<DataTest> dataTestList = new ArrayList<>();
-        DataTest dataTest1 = new DataTest("杨帅", "23");
-        DataTest dataTest2 = new DataTest("222", "65");
-        DataTest dataTest3 = new DataTest("sd", "12");
-        DataTest dataTest4 = new DataTest("rt", "27");
-        dataTestList.add(dataTest1);
-        dataTestList.add(dataTest2);
-        dataTestList.add(dataTest3);
-        dataTestList.add(dataTest4);
-        lineChart.refreshEchartsWithOption(EchartOptionUtil.getPieChartOptions(dataTestList));
+        Object[] y = new Object[] {"直接访问","邮件营销","联盟广告","视频广告","搜索引擎"};
+        Object[] x = new Object[]{"{value:335, name:'直接访问'}","{value:310, name:'邮件营销'}","{value:234, name:'联盟广告'}",
+                "{value:135, name:'视频广告'}","{value:1548, name:'搜索引擎'}"};
+        lineChart.refreshEchartsWithOption(EchartOptionUtil.getPieChartOptions(y, x));
     }
 }
