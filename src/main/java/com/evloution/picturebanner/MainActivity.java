@@ -8,6 +8,7 @@ import android.widget.Button;
 
 import com.evloution.picturebanner.banner.BannerActivity;
 import com.evloution.picturebanner.echart.EchartActivity;
+import com.evloution.picturebanner.echart.EchartActivity1;
 import com.evloution.picturebanner.mpandroidchart.MPAndroidChartActivity;
 import com.evloution.picturebanner.revealbanner.RevealBannerActivity;
 import com.evloution.picturebanner.smartrefresh.SmartRefreshActivity;
@@ -58,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(this, MPAndroidChartActivity.class));
                 break;
             case R.id.main_echart:
-                startActivity(new Intent(this, EchartActivity.class));
+                startActivity(new Intent(this, EchartActivity1.class));
                 break;
         }
     }
