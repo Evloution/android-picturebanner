@@ -26,6 +26,7 @@ public class DataPieFragment extends Fragment {
     EchartView eChart;
     Unbinder unbinder;
     // 哈哈git测试
+    // dkhdjhfdf
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
