@@ -43,4 +43,10 @@
         android:layout_height="wrap_content"
         android:text="echart"/>
 
+    <Button
+        android:id="@+id/main_togglepages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TogglePages" />
+
 </LinearLayout>

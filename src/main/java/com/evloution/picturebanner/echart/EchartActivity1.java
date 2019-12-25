@@ -102,12 +102,18 @@ public class EchartActivity1 extends AppCompatActivity {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.linechart_bt:
+                chartshowWb.setVisibility(View.GONE);
+                chartshowWb.setVisibility(View.VISIBLE);
                 chartshowWb.loadUrl("javascript:doCreatChart('line'," + 0 + ", " + 0 + "," + 0 + ");");
                 break;
             case R.id.barchart_bt:
+                chartshowWb.setVisibility(View.GONE);
+                chartshowWb.setVisibility(View.VISIBLE);
                 chartshowWb.loadUrl("javascript:doCreatChart('bar'," + labelArray + ", " + droppedArray + "," + aliveArray + ");");
                 break;
             case R.id.piechart_bt:
+                chartshowWb.setVisibility(View.GONE);
+                chartshowWb.setVisibility(View.VISIBLE);
                 chartshowWb.loadUrl("javascript:doCreatChart('pie', " + 2.5 + "," + 0 + "," + 0 + ");");
                 break;
         }

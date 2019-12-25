@@ -1,0 +1,4 @@
+#Sat Dec 21 14:33:22 CST 2019
+base.0=D\:\\android_workspace\\android_evloution_space\\picturebanner\\build\\intermediates\\transforms\\dexMerger\\debug\\10
+path.0=classes.dex
+renamed.0=classes.dex

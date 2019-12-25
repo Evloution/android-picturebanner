@@ -7,12 +7,12 @@ import android.view.View;
 import android.widget.Button;
 
 import com.evloution.picturebanner.banner.BannerActivity;
-import com.evloution.picturebanner.echart.EchartActivity;
 import com.evloution.picturebanner.echart.EchartActivity1;
 import com.evloution.picturebanner.mpandroidchart.MPAndroidChartActivity;
 import com.evloution.picturebanner.revealbanner.RevealBannerActivity;
 import com.evloution.picturebanner.smartrefresh.SmartRefreshActivity;
 import com.evloution.picturebanner.swiperefresh.SwipeRefreshActivity;
+import com.evloution.picturebanner.togglepages.TogglePagesActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -32,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
     Button mainMpandroidchart;
     @BindView(R.id.main_echart)
     Button mainEchart;
+    @BindView(R.id.main_togglepages)
+    Button mainTogglepages;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.main_banner, R.id.main_revealbanner, R.id.main_smartrefresh, R.id.main_swiperefresh, R.id.main_mpandroidchart, R.id.main_echart})
+    @OnClick({R.id.main_banner, R.id.main_revealbanner, R.id.main_smartrefresh, R.id.main_swiperefresh, R.id.main_mpandroidchart, R.id.main_echart, R.id.main_togglepages})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.main_banner:
@@ -60,6 +62,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.main_echart:
                 startActivity(new Intent(this, EchartActivity1.class));
+                break;
+            case R.id.main_togglepages:
+                startActivity(new Intent(this, TogglePagesActivity.class));
                 break;
         }
     }

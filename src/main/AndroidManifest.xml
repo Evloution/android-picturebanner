@@ -21,7 +21,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity android:name=".revealbanner.RevealBannerActivity" />
         <activity android:name=".banner.BannerActivity" />
         <activity android:name=".smartrefresh.SmartRefreshActivity" />
@@ -29,6 +28,7 @@
         <activity android:name=".mpandroidchart.MPAndroidChartActivity" />
         <activity android:name=".echart.EchartActivity" />
         <activity android:name=".echart.EchartActivity1" />
+        <activity android:name=".togglepages.TogglePagesActivity" />
     </application>
 
 </manifest>
