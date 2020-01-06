@@ -16,11 +16,11 @@ import java.lang.Override;
 public class EchartActivity1_ViewBinding implements Unbinder {
   private EchartActivity1 target;
 
-  private View view2131230841;
+  private View view2131230873;
 
   private View view2131230763;
 
-  private View view2131230880;
+  private View view2131230913;
 
   @UiThread
   public EchartActivity1_ViewBinding(EchartActivity1 target) {
@@ -34,7 +34,7 @@ public class EchartActivity1_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.linechart_bt, "field 'linechartBt' and method 'onViewClicked'");
     target.linechartBt = Utils.castView(view, R.id.linechart_bt, "field 'linechartBt'", Button.class);
-    view2131230841 = view;
+    view2131230873 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -52,7 +52,7 @@ public class EchartActivity1_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.piechart_bt, "field 'piechartBt' and method 'onViewClicked'");
     target.piechartBt = Utils.castView(view, R.id.piechart_bt, "field 'piechartBt'", Button.class);
-    view2131230880 = view;
+    view2131230913 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -74,11 +74,11 @@ public class EchartActivity1_ViewBinding implements Unbinder {
     target.piechartBt = null;
     target.chartshowWb = null;
 
-    view2131230841.setOnClickListener(null);
-    view2131230841 = null;
+    view2131230873.setOnClickListener(null);
+    view2131230873 = null;
     view2131230763.setOnClickListener(null);
     view2131230763 = null;
-    view2131230880.setOnClickListener(null);
-    view2131230880 = null;
+    view2131230913.setOnClickListener(null);
+    view2131230913 = null;
   }
 }

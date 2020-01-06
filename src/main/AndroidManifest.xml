@@ -25,10 +25,23 @@
         <activity android:name=".banner.BannerActivity" />
         <activity android:name=".smartrefresh.SmartRefreshActivity" />
         <activity android:name=".swiperefresh.SwipeRefreshActivity" />
-        <activity android:name=".mpandroidchart.MPAndroidChartActivity" />
         <activity android:name=".echart.EchartActivity" />
         <activity android:name=".echart.EchartActivity1" />
         <activity android:name=".togglepages.TogglePagesActivity" />
+
+        <service
+            android:name=".notification.NotificationService"
+            android:exported="false" />
+
+        <activity
+            android:name=".notification.LaunchActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".notification.NotificationMainActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".notification.MainNotificationActivity"
+            android:launchMode="singleTask" />
     </application>
 
 </manifest>

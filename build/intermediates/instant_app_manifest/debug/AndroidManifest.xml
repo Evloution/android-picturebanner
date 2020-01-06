@@ -34,10 +34,23 @@
         <activity android:name="com.evloution.picturebanner.banner.BannerActivity" />
         <activity android:name="com.evloution.picturebanner.smartrefresh.SmartRefreshActivity" />
         <activity android:name="com.evloution.picturebanner.swiperefresh.SwipeRefreshActivity" />
-        <activity android:name="com.evloution.picturebanner.mpandroidchart.MPAndroidChartActivity" />
         <activity android:name="com.evloution.picturebanner.echart.EchartActivity" />
         <activity android:name="com.evloution.picturebanner.echart.EchartActivity1" />
         <activity android:name="com.evloution.picturebanner.togglepages.TogglePagesActivity" />
+
+        <service
+            android:name="com.evloution.picturebanner.notification.NotificationService"
+            android:exported="false" />
+
+        <activity
+            android:name="com.evloution.picturebanner.notification.LaunchActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.evloution.picturebanner.notification.NotificationMainActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.evloution.picturebanner.notification.MainNotificationActivity"
+            android:launchMode="singleTask" />
 
         <provider
             android:name="android.arch.lifecycle.ProcessLifecycleOwnerInitializer"

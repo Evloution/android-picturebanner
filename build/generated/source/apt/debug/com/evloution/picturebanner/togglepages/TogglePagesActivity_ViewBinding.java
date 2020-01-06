@@ -15,9 +15,9 @@ import java.lang.Override;
 public class TogglePagesActivity_ViewBinding implements Unbinder {
   private TogglePagesActivity target;
 
-  private View view2131230958;
+  private View view2131230991;
 
-  private View view2131230959;
+  private View view2131230992;
 
   @UiThread
   public TogglePagesActivity_ViewBinding(TogglePagesActivity target) {
@@ -31,7 +31,7 @@ public class TogglePagesActivity_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.togglepages_one_btn, "field 'togglepagesOneBtn' and method 'onViewClicked'");
     target.togglepagesOneBtn = Utils.castView(view, R.id.togglepages_one_btn, "field 'togglepagesOneBtn'", Button.class);
-    view2131230958 = view;
+    view2131230991 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -40,7 +40,7 @@ public class TogglePagesActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.togglepages_two_btn, "field 'togglepagesTwoBtn' and method 'onViewClicked'");
     target.togglepagesTwoBtn = Utils.castView(view, R.id.togglepages_two_btn, "field 'togglepagesTwoBtn'", Button.class);
-    view2131230959 = view;
+    view2131230992 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -59,9 +59,9 @@ public class TogglePagesActivity_ViewBinding implements Unbinder {
     target.togglepagesOneBtn = null;
     target.togglepagesTwoBtn = null;
 
-    view2131230958.setOnClickListener(null);
-    view2131230958 = null;
-    view2131230959.setOnClickListener(null);
-    view2131230959 = null;
+    view2131230991.setOnClickListener(null);
+    view2131230991 = null;
+    view2131230992.setOnClickListener(null);
+    view2131230992 = null;
   }
 }

@@ -53,13 +53,13 @@ public final class R {
     public static final class string {
         private string() {}
 
-        public static final int fgh_mask_bottom = 0x7f0d0030;
-        public static final int fgh_mask_top_pull = 0x7f0d0031;
-        public static final int fgh_mask_top_release = 0x7f0d0032;
-        public static final int fgh_text_game_over = 0x7f0d0033;
-        public static final int fgh_text_loading = 0x7f0d0034;
-        public static final int fgh_text_loading_failed = 0x7f0d0035;
-        public static final int fgh_text_loading_finish = 0x7f0d0036;
+        public static final int fgh_mask_bottom = 0x7f0d0035;
+        public static final int fgh_mask_top_pull = 0x7f0d0036;
+        public static final int fgh_mask_top_release = 0x7f0d0037;
+        public static final int fgh_text_game_over = 0x7f0d0038;
+        public static final int fgh_text_loading = 0x7f0d0039;
+        public static final int fgh_text_loading_failed = 0x7f0d003a;
+        public static final int fgh_text_loading_finish = 0x7f0d003b;
     }
     public static final class styleable {
         private styleable() {}

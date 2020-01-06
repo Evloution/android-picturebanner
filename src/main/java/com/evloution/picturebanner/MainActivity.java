@@ -8,7 +8,7 @@ import android.widget.Button;
 
 import com.evloution.picturebanner.banner.BannerActivity;
 import com.evloution.picturebanner.echart.EchartActivity1;
-import com.evloution.picturebanner.mpandroidchart.MPAndroidChartActivity;
+import com.evloution.picturebanner.notification.MainNotificationActivity;
 import com.evloution.picturebanner.revealbanner.RevealBannerActivity;
 import com.evloution.picturebanner.smartrefresh.SmartRefreshActivity;
 import com.evloution.picturebanner.swiperefresh.SwipeRefreshActivity;
@@ -34,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
     Button mainEchart;
     @BindView(R.id.main_togglepages)
     Button mainTogglepages;
+    @BindView(R.id.main_notification)
+    Button mainNotification;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +44,8 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.main_banner, R.id.main_revealbanner, R.id.main_smartrefresh, R.id.main_swiperefresh, R.id.main_mpandroidchart, R.id.main_echart, R.id.main_togglepages})
+    @OnClick({R.id.main_banner, R.id.main_revealbanner, R.id.main_smartrefresh, R.id.main_swiperefresh, R.id.main_mpandroidchart,
+            R.id.main_echart, R.id.main_togglepages, R.id.main_notification})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.main_banner:
@@ -57,14 +60,14 @@ public class MainActivity extends AppCompatActivity {
             case R.id.main_swiperefresh:
                 startActivity(new Intent(this, SwipeRefreshActivity.class));
                 break;
-            case R.id.main_mpandroidchart:
-                startActivity(new Intent(this, MPAndroidChartActivity.class));
-                break;
             case R.id.main_echart:
                 startActivity(new Intent(this, EchartActivity1.class));
                 break;
             case R.id.main_togglepages:
                 startActivity(new Intent(this, TogglePagesActivity.class));
+                break;
+            case R.id.main_notification:
+                startActivity(new Intent(this, MainNotificationActivity.class));
                 break;
         }
     }
